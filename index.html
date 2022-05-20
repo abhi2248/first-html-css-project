@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay fit</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="css/style.css">
+<style>
+    /*css reset*/
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+        color:white;
+       margin:0px;
+       padding:0px;
+       background:url('img/bg.jpg'); 
+    }
+    .left{
+        display:inline-block;
+    /* border:2px solid red;*/
+     position:absolute;
+     left:34px;
+     top:20px;
+    }
+    .left img{
+        height:40px;
+        width:100px;
+    }
+    .left div{
+        text-align:center;
+        line-height: 15px;
+    }
+    .mid{
+        display:block;
+        width:50%;
+        margin:15px auto;
+    /* border:2px solid green;*/
+    }
+    .right{
+        position:absolute;
+        right:34px;
+        top:28px;
+        display:inline-block;
+    /* border:2px solid yellow;*/
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size:20px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:34px 23px; 
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:grey;
+    }
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        margin:0px 9px;
+        color:white;
+        background-color: black;
+        padding:4px 14px;
+        border:2px solid grey;
+        border-radius:10px;
+        font-size:15px;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background-color: brown;
+    }
+    .container{
+        border:2px solid white;
+        margin:60px 50px;
+        padding:36px;
+        width:36%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display:block;
+        width:400px;
+        padding:1px;
+        border:2px solid black;
+        margin:4px auto;
+     font-size: 15px;
+     border-radius:8px ;
+    }
+    .container h1{
+      text-align: center;
+    }
+    .container button{
+        display:block;
+        margin:15px auto;
+        width:34%;
+    }
+
+</style>
+<body>
+    <header class="header">
+       <!-- left box for logo-->
+        <div class="left">
+        <img src="img/logo.jpg"alt="">
+        <div> Stay fit</div>
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+             <li><a href="#"class="active">Home</a></li>   
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Fitness Calculator</a></li>
+             <li><a href="#">Contact us</a></li>
+            </ul>
+    
+        </div>
+        <!--right for buttons-->
+        <div class="right">
+        <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+         <input type="text"Name=""placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+              <input type="text"Name=""placeholder="Enter your Age">
+                 </div>
+             <div class="form-group">
+              <input type="text"Name=""placeholder="Enter your Gender">
+             </div>
+             <div class="form-group">
+                <input type="text"Name=""placeholder="Enter your Locality">
+               </div>
+               <div class="form-group">
+                <input type="text"Name=""placeholder="Enter your Number">
+               </div>
+               <button class="btn">Submit</button>
+
+             
+
+        </form>
+    </div>
+    
+</body>
+</html>
